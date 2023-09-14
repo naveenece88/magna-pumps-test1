@@ -1,4 +1,4 @@
-import { Component, Inject, AfterViewInit } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { CommonsService } from './services/commons.service';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
@@ -10,12 +10,6 @@ declare var myFunction: any;
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
-})
-
-@Component({
-  selector: 'app-my-component',
-  templateUrl: './my-component.component.html',
-  styleUrls: ['./my-component.component.css']
 })
 
 export class AppComponent {
@@ -70,32 +64,4 @@ export class AppComponent {
     element.setAttribute('href', hostname + url)
   }
 
-}
-
-export class MyComponent implements AfterViewInit {
-  ngAfterViewInit() {
-    window.onload = function() {
-      document.querySelectorAll('.dropdown-menu a.dropdown-toggle').forEach(function(element) {
-        element.addEventListener('click', function (e) {
-          var _this = this;
-          e.preventDefault();
-          e.stopPropagation();
-          _this.parentElement.classList.toggle('show');
-          _this.nextElementSibling.classList.toggle('show');
-        });
-      });
-    
-      document.querySelectorAll('.dropdown').forEach(function(element) {
-        element.addEventListener('hidden.bs.dropdown', function () {
-          this.querySelectorAll('.dropdown-submenu .show').forEach(function(element){
-            element.classList.remove('show');
-          });
-        });
-      });
-    };
-
-    myFunction(); // If you're calling a function from a global script
-  }
-
- 
 }
