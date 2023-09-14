@@ -52,7 +52,20 @@
               </li>
               <li class="nav-item dropdown"><a class="nav-link  " routerLink='products' [ngClass]="{'active' : commons.tab == 2}" href="#about-us" role="button">Products</a>
               </li>
-              <li class="nav-item dropdown"><a class="nav-link  " routerLink='applications' [ngClass]="{'active' : commons.tab == 3}" href="#products" role="button">Applications</a>
+              <li class="nav-item dropdown custom-dropdown">
+                <a class="nav-link dropdown-toggle" routerLink='products' [ngClass]="{'active' : commons.tab == 2}" href="#about-us" role="button" id="productsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">Pumps</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item nav-link" routerLink='products/pumps/metallic' [ngClass]="{'active' : commons.tab == 2}">Metallic</a></li>
+                      <li><a class="dropdown-item nav-link" routerLink='products/pumps/non-metallic' [ngClass]="{'active' : commons.tab == 2}">Non-Metallic</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item nav-link" routerLink='products/motors' [ngClass]="{'active' : commons.tab == 2}">Motors</a></li>
+                </ul>
               </li>
               <li class="nav-item dropdown"><a class="nav-link  " routerLink='channel-partners' [ngClass]="{'active' : commons.tab == 4}" href="#contact-us" role="button">Channel Partners</a>
               </li>
