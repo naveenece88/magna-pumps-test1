@@ -49,9 +49,7 @@
               <li class="nav-item dropdown"><a class="nav-link"  routerLink='home' [ngClass]="{'active' : commons.tab == 0}" href="#home" role="button">Home</a>
               </li>
               <li class="nav-item dropdown"><a class="nav-link  " routerLink='about-us' [ngClass]="{'active' : commons.tab == 1}" href="#services" role="button">About Us</a>
-              </li>
-              <li class="nav-item dropdown"><a class="nav-link  " routerLink='products' [ngClass]="{'active' : commons.tab == 2}" href="#about-us" role="button">Products</a>
-              </li>
+              </li>              
               <li class="nav-item dropdown custom-dropdown">
                 <a class="nav-link dropdown-toggle" routerLink='products' [ngClass]="{'active' : commons.tab == 2}" href="#about-us" role="button" id="productsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                   Products
@@ -63,8 +61,14 @@
                       <li><a class="dropdown-item nav-link" routerLink='products/pumps/metallic' [ngClass]="{'active' : commons.tab == 2}">Metallic</a></li>
                       <li><a class="dropdown-item nav-link" routerLink='products/pumps/non-metallic' [ngClass]="{'active' : commons.tab == 2}">Non-Metallic</a></li>
                     </ul>
+                  </li>                 
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">Motors</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item nav-link" routerLink='products/motors/metallic' [ngClass]="{'active' : commons.tab == 2}">Metallic</a></li>
+                      <li><a class="dropdown-item nav-link" routerLink='products/motors/non-metallic' [ngClass]="{'active' : commons.tab == 2}">Non-Metallic</a></li>
+                    </ul>
                   </li>
-                  <li><a class="dropdown-item nav-link" routerLink='products/motors' [ngClass]="{'active' : commons.tab == 2}">Motors</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown"><a class="nav-link  " routerLink='channel-partners' [ngClass]="{'active' : commons.tab == 4}" href="#contact-us" role="button">Channel Partners</a>
