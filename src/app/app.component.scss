@@ -1,8 +1,13 @@
-.dropdown-submenu:hover>.dropdown-menu {
+  .dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+  }
+  
+  .dropdown-submenu:hover>.dropdown-menu {
     display: block;
   }
-
-  .custom-dropdown:hover .dropdown-menu {
-    display: block;
-  }
-

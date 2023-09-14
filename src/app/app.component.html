@@ -70,28 +70,23 @@
             <li class="nav-item dropdown"><a class="nav-link  " routerLink='about-us'
                 [ngClass]="{'active' : commons.tab == 1}" href="#services" role="button">About Us</a>
             </li>
-            <li class="nav-item dropdown custom-dropdown">
-              <a class="nav-link dropdown-toggle" routerLink='products' [ngClass]="{'active' : commons.tab == 2}"
-                href="#about-us" role="button" id="productsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" id="productsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                 Products
               </a>
               <ul class="dropdown-menu" aria-labelledby="productsDropdown">
                 <li class="dropdown-submenu">
                   <a class="dropdown-item dropdown-toggle" href="#">Pumps</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item nav-link" routerLink='products/pumps/metallic'
-                        [ngClass]="{'active' : commons.tab == 2}">Metallic1</a></li>
-                    <li><a class="dropdown-item nav-link" routerLink='products/pumps/non-metallic'
-                        [ngClass]="{'active' : commons.tab == 2}">Non-Metallic2</a></li>
+                    <li><a class="dropdown-item" href="#">Metallic1</a></li>
+                    <li><a class="dropdown-item" href="#">Non-Metallic2</a></li>
                   </ul>
                 </li>
                 <li class="dropdown-submenu">
                   <a class="dropdown-item dropdown-toggle" href="#">Motors</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item nav-link" routerLink='products/motors/metallic'
-                        [ngClass]="{'active' : commons.tab == 2}">Metallic3</a></li>
-                    <li><a class="dropdown-item nav-link" routerLink='products/motors/non-metallic'
-                        [ngClass]="{'active' : commons.tab == 2}">Non-Metallic4</a></li>
+                    <li><a class="dropdown-item" href="#">Metallic3</a></li>
+                    <li><a class="dropdown-item" href="#">Non-Metallic4</a></li>
                   </ul>
                 </li>
               </ul>
