@@ -6,35 +6,3 @@
     display: block;
   }
 
-  .custom-dropdown {
-    background-color: #343a40; /* Replace with the color of your navbar */
-    border: none;
-  }
-  
-  .custom-dropdown .dropdown-item {
-    color: #fff; /* Replace with the color of your navbar text */
-    padding: 10px 20px; /* Adjust as needed */
-  }
-  
-  .custom-dropdown .dropdown-item:hover {
-    color: #343a40; /* Replace with the color of your navbar text hover */
-    background-color: #fff; /* Replace with the color of your navbar hover */
-  }
-
-  .dropdown-submenu {
-    position: relative;
-  }
-  
-  .dropdown-submenu a::after {
-    transform: rotate(-90deg);
-    position: absolute;
-    right: 6px;
-    top: .8em;
-  }
-  
-  .dropdown-submenu .dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-left: .1rem;
-    margin-right: .1rem;
-  }
