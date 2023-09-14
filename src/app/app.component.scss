@@ -1,4 +1,4 @@
-  .dropdown-submenu {
+.dropdown-submenu {
     position: relative;
   }
   
@@ -8,6 +8,6 @@
     margin-top: -1px;
   }
   
-  .dropdown-submenu:hover>.dropdown-menu {
+  .dropdown:hover .dropdown-menu {
     display: block;
   }

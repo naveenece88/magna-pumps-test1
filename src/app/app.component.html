@@ -71,7 +71,8 @@
                 [ngClass]="{'active' : commons.tab == 1}" href="#services" role="button">About Us</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" id="productsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" routerLink='products' [ngClass]="{'active' : commons.tab == 2}"
+                href="#about-us" role="button" id="productsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                 Products
               </a>
               <ul class="dropdown-menu" aria-labelledby="productsDropdown">
@@ -89,7 +90,7 @@
                     <li><a class="dropdown-item" href="#">Non-Metallic4</a></li>
                   </ul>
                 </li>
-              </ul>
+              </ul>              
             </li>
             <li class="nav-item dropdown"><a class="nav-link  " routerLink='applications'
                 [ngClass]="{'active' : commons.tab == 3}" href="#products" role="button">Applications</a>
